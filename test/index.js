@@ -23,7 +23,8 @@ describe('ESLint Rule', () => {
             'function test() { try { var bf = 2; console.log(bf); } catch (err) {} }',
             'function test() { try {} catch (err) { var cf = 3; console.log(cf); } }',
             'function test() { try { var bf = 2; if (bf) { console.log(bf); } } catch (err) {} }',
-            'function test() { try { if (true) { var bf = 2; } console.log(bf); } catch (err) {} }'
+            'function test() { try { if (true) { var bf = 2; } console.log(bf); } catch (err) {} }',
+            'var a = 1; try {} catch (err) {}'
         ];
 
         const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
@@ -45,7 +46,8 @@ describe('ESLint Rule', () => {
             'const a = 1;',
             'function test() { try { var bf = 2; } catch (err) {} console.log(bf); }',
             'function test() { try {} catch (err) { var cf = 3; } console.log(cf); }',
-            'function test() { a = 1; try { var a = 2; } catch (err) {} }'
+            'function test() { a = 1; try { var a = 2; } catch (err) {} }',
+            'try { var a = 1; } catch (err) {} console.log(a);'
         ];
 
         const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
