@@ -1,6 +1,6 @@
 {
   "name": "hapi-no-var",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint rule to enforce the usage of var declarations only in try-catch scope",
   "main": "lib/index.js",
   "repository": {
