@@ -1,0 +1,26 @@
+{
+  "name": "hapi-no-var",
+  "version": "1.0.0",
+  "description": "ESLint rule to enforce the usage of var declarations only in try-catch scope",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hapijs/hapi-no-var.git"
+  },
+  "keywords": [
+    "eslint",
+    "hapi",
+    "eslintrule",
+    "require"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "code": "5.x.x",
+    "eslint": "4.x.x",
+    "lab": "15.x.x"
+  },
+  "scripts": {
+    "test": "lab -v -t 100 -a code -L"
+  },
+  "license": "BSD-3-Clause"
+}
