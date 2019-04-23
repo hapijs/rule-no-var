@@ -3,7 +3,7 @@
 const Code = require('@hapi/code');
 const ESLint = require('eslint');
 const Lab = require('@hapi/lab');
-const NoVar = require('..');
+const Rule = require('..');
 
 
 const { describe, it } = exports.lab = Lab.script();
@@ -27,7 +27,7 @@ describe('ESLint Rule', () => {
         ];
 
         const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
-        ruleTester.run(NoVar.esLintRuleName, NoVar, {
+        ruleTester.run('test', Rule, {
             valid: [],
             invalid: sample.map((code) => {
 
@@ -50,7 +50,7 @@ describe('ESLint Rule', () => {
         ];
 
         const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 6 } });
-        ruleTester.run(NoVar.esLintRuleName, NoVar, {
+        ruleTester.run('test', Rule, {
             valid: sample.map((code) => {
 
                 return { code };
