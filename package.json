@@ -1,5 +1,5 @@
 {
-  "name": "@hapi/no-var",
+  "name": "@hapi/rule-no-var",
   "version": "1.1.0",
   "description": "ESLint rule to enforce the usage of var declarations only in try-catch scope",
   "main": "lib/index.js",
