@@ -1,6 +1,6 @@
 <a href="http://hapijs.com"><img src="https://raw.githubusercontent.com/hapijs/assets/master/images/family.png" width="180px" align="right" /></a>
 
-# rule-no-var
+# @hapi/rule-no-var
 
 ESLint rule to enforce the usage of var declarations only in try-catch scope.
 
